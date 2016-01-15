@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Resume</title>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./bootstrap.min.css">
+
+    </head>
+    <body>
+        <h1 class="fullName">Shelly Cao</h1>
+        <div class="section">
+            <p class="section-title">Summary</p>
+            <p class="section-p">This is my summary</p>
+        </div>
+        <div class="section">
+            <p class="section-title">Education</p>
+            <p class="section-p">This is my summary</p>
+        </div>
+        <div class="section">
+            <p class="section-title">Experience</p>
+            <p class="section-p">This is my summary</p>
+        </div>
+        <div class="section">
+            <p class="section-title">Activities</p>
+            <p class="section-p">This is my summary</p>
+        </div>
+        
+        
+        <div class="section">
+            <p class="section-title">Leave me a message</p>
+            <div id="user-messages"></div>
+            <input id="leave-message" type="text"></input><br>
+            <button id="submit-button">submit</button>
+        </div>
+    
+        <script src="./js/jquery-2.2.0.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+                $("#submit-button").click(function(){
+                    var message = $("#leave-message").val();
+                    $("#leave-message").val("");
+                    $("#user-messages").append("<p>"+message+"</p>");
+                });
+            });
+        </script>
+    </body>
+
+</html>
