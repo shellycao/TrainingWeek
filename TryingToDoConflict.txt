@@ -1,4 +1,8 @@
 original
 
 
+
 changed in master branch
+
+changed in tryingConflict branch
+
